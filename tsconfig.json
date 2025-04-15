@@ -11,6 +11,7 @@
       "@screens/*": ["./src/screens/*"],
       "@storage/*": ["./src/storage/*"],
       "@utils/*": ["./src/utils/*"]
-    }
+    },
+    "types": ["styled-components", "styled-components/native"]
   }
 }
