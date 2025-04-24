@@ -7,13 +7,10 @@ import { Container } from "./styles";
 
 import { useState } from "react";
 import { FlatList } from "react-native";
+import { Button } from "@components/Button";
 
 export function Groups() {
-  const [groups, setGroups] = useState<string[]>([
-    "Galera",
-    "Turma 1",
-    "Turma 2",
-  ]);
+  const [groups, setGroups] = useState<string[]>([]);
 
   return (
     <Container>
@@ -29,6 +26,7 @@ export function Groups() {
         )}
         showsVerticalScrollIndicator={false}
       />
+      <Button title="Criar nova turma" />
     </Container>
   );
 }
